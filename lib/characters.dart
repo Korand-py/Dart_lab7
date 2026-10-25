@@ -11,9 +11,9 @@ class Warrior extends Character {
     return 15 + Random().nextInt(11);
   }
   @override
-  void takeDamege(int damage) {
+  void takeDamage(int damage) {
     int reduced = (damage - armor).clamp(0, damage);
-    super.takeDamege(reduced);
+    super.takeDamage(reduced);
   }
   @override
   String toString() {

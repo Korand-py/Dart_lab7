@@ -13,7 +13,7 @@ abstract class Character {
 
   int attack();
 
-  void takeDamege(int damage) {
+  void takeDamage(int damage) {
     hp -= damage;
     if (hp < 0) hp = 0;
   }
